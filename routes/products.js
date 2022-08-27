@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 var GetProductsByCategory = require("../controllers/getProductsByCategory");
 var GetProductDetailById = require("../controllers/GetProductDetailById");
-var GetProductPricesById = require("../controllers/GetProductPricesById");
+var GetProductPricesById = require("../controllers/getProductPricesById");
 
 router.get("/products/:id", GetProductsByCategory);
 router.get("/productDetail/:id", GetProductDetailById);
