@@ -1,6 +1,6 @@
 var connection = require("../db/mysql.config");
 
-function GetCategories(req, res) {
+function getCategories(req, res) {
 	try {
 		connection.getConnection((err) => {
 			if (err) throw err;
@@ -14,4 +14,4 @@ function GetCategories(req, res) {
 	}
 }
 
-module.exports = GetCategories;
+module.exports = getCategories;

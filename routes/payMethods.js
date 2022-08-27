@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
-var MethodTransf = require("../controllers/postTransfMethod");
+var methodTransf = require("../controllers/postTransfMethod");
 
-router.post("/transf", MethodTransf);
+router.post("/transf", methodTransf);
 
 module.exports = router;

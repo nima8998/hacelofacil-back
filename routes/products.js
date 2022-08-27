@@ -1,11 +1,11 @@
 var express = require("express");
 var router = express.Router();
-var GetProductsByCategory = require("../controllers/getProductsByCategory");
-var GetProductDetailById = require("../controllers/GetProductDetailById");
-var GetProductPricesById = require("../controllers/getProductPricesById");
+var getProductsByCategory = require("../controllers/getProductsByCategory");
+var getProductDetailById = require("../controllers/getProductDetailById");
+var getProductPricesById = require("../controllers/getProductPricesById");
 
-router.get("/products/:id", GetProductsByCategory);
-router.get("/productDetail/:id", GetProductDetailById);
-router.get("/productPrices/:id", GetProductPricesById);
+router.get("/products/:id", getProductsByCategory);
+router.get("/productDetail/:id", getProductDetailById);
+router.get("/productPrices/:id", getProductPricesById);
 
 module.exports = router;

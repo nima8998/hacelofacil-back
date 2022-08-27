@@ -1,6 +1,6 @@
 var connection = require("../db/mysql.config");
 
-function GetProductDetailById(req, res) {
+function getProductDetailById(req, res) {
 	const { id } = req.params;
 	try {
 		connection.getConnection((err) => {
@@ -46,4 +46,4 @@ function GetProductDetailById(req, res) {
 	} catch (error) {}
 }
 
-module.exports = GetProductDetailById;
+module.exports = getProductDetailById;
